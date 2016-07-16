@@ -1,0 +1,6 @@
+[
+	 { "keys": ["shift+space"], "command": "auto_complete" },
+	 //for mac
+	 { "keys": ["super+f"], "command": "slurp_find_string" },
+]
+
