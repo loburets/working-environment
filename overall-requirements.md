@@ -1,6 +1,6 @@
 ### Общеее
 
-- Lumb
+- LAMP
 - sublime + плагины / phpstorm
 - filezilla
 - git + git gui
