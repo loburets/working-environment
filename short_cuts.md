@@ -28,6 +28,11 @@ storm:
 	cmd + D 			- дублировать строку или выделенный код
 	alt + space 		- посмотреть определение метода/свойства
 	alt + F1 + enter	- перейти к текущему вайлу в файловой структуре проекта
+	alt + (fn)F7 		- все использования переменно (find usage)
+
+	my:
+	cmd + alt + s 		- split view horizontly
+	cmd + alt + w 		- close split view
 
 sublime:
 
