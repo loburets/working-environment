@@ -1,0 +1,1 @@
+Font: Fira Cose, Size:14, Line spacing 1.4, Secondary font: Menlo, Enable font ligatures - yes

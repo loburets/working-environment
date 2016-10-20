@@ -6,16 +6,18 @@ Vagrant.configure("2") do |config|
     config.vm.box = "scotch/box"
     config.vm.network "private_network", ip: "192.168.33.10"
     config.vm.hostname = "scotchbox"
-    config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
+    # config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
     
     # Optional NFS. Make sure to remove other synced_folder line too
-    #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
-
+    # config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
+    config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666", 'vers=3', 'tcp', 'fsc' ,'actimeo=2'] }
 
     #CUSTOM CODE START
 
     config.vm.provider "virtualbox" do |v|
-      v.memory = 512
+      v.memory = 2048
+      v.customize ["modifyvm", :id, "--cpuexecutioncap", "70"]
+      v.cpus = 4
     end
 
     config.vm.provision "shell", inline: <<-SHELL
@@ -23,9 +25,14 @@ Vagrant.configure("2") do |config|
         ## CHANGE THIS DOMAINS
         DOMAINS=(
         	#"radiser.loc"
-            #"wfresidency.loc"
             #"affiliates.loc"
             #"urlrefer.loc"
+            #"wfresidency.loc"
+            #"app.wfresidency.loc"
+            #"wfresidency"
+            #"app.wfresidency"
+            #"www.nerdblock-local.com"
+            # "thermohub.dev"
         )
 
         ## Loop through all sites
