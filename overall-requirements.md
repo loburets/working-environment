@@ -3,7 +3,7 @@
 - LAMP
 - sublime + плагины / phpstorm
 - filezilla
-- git + git gui
+- git + git gui (source tree)
 - heidy sql / Sequel / valentina studio
 - conEmu / iTerm
 - chrome
