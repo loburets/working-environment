@@ -38,6 +38,7 @@ alias gg='git gui'
 alias gch='git checkout'
 alias gpl='git pull'
 alias gpsh='git push'
+alias gm='git merge'
 alias grh='git reset --hard'
 alias grs='git reset --soft'
 
