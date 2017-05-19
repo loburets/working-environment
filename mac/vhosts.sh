@@ -1,6 +1,7 @@
         ## CHANGE THIS DOMAINS
         DOMAINS=(
-            "test.loc"
+            "shirtpunch.dev"
+            "new-valorblocks.loc"
         )
 
         ## Loop through all sites
@@ -20,5 +21,5 @@
             sudo sed -i '' -e  "s/example.loc/$DOMAIN/g" /private/etc/apache2/extra/vhosts/$DOMAIN.conf
         done
 
-        echo "So let's restart apache..."
-        sudo apachectl restart
+	    echo "So let's restart apache..."
+	    sudo apachectl restart
