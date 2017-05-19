@@ -1,7 +1,13 @@
 {
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"font_size": 11,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 2,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+	"drag_text": false,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -14,7 +20,7 @@
 	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
-	"material_theme_contrast_mode": true,
+	"material_theme_contrast_mode": false,
 	"material_theme_panel_separator": true,
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
@@ -24,7 +30,6 @@
 		80,
 		120
 	],
-	"theme": "Material-Theme-Darker.sublime-theme",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"theme": "Material Flatland.sublime-theme",
 	"word_wrap": "true"
 }

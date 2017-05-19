@@ -1,15 +1,15 @@
 [
     {
-        "button": "button1", 
-        "count": 1, 
+        "button": "button1",
+        "count": 1,
         "modifiers": ["ctrl", "shift"],
         "press_command": "drag_select",
         "command": "goto_definition"
     },
     //for mac
     {
-        "button": "button1", 
-        "count": 1, 
+        "button": "button1",
+        "count": 1,
         "modifiers": ["super", "shift"],
         "press_command": "drag_select",
         "command": "goto_definition"

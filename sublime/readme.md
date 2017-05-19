@@ -29,7 +29,7 @@
 
 7) MaterialTheme                - Визуальные темы саблайма
 
-8) Materialize					- Визуальные темы саблайма
+8) Materialize					- Визуальные темы саблайма (в т.ч. Flatland)
 
 9) ColorSublime                 - Цвета подсветки синтаксиса
 
