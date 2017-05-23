@@ -5,7 +5,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
 	"drag_text": false,
 	"font_size": 13,
 	"highlight_modified_tabs": true,
@@ -30,6 +30,6 @@
 		80,
 		120
 	],
-	"theme": "Material Flatland.sublime-theme",
+	"theme": "Boxy Ocean.sublime-theme",
 	"word_wrap": "true"
 }
