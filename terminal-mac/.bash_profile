@@ -36,11 +36,11 @@ export PS1="${POWDER_BLUE}\u@\h: ${WHITE}\w ${LIME_YELLOW}\$(parse_git_branch) $
 alias gs='git status'
 alias gg='git gui'
 alias gm='git merge'
+alias gmm='git merge master'
 alias gch='git checkout'
 alias gchm='git checkout master'
 alias gpl='git pull'
 alias gpsh='git push'
-alias gm='git merge'
 alias grh='git reset --hard'
 alias grs='git reset --soft'
 
@@ -49,6 +49,3 @@ alias gl='gulp'
 
 # for reload this settings run
 # source ~/.bash_profile
-export PATH="/usr/local/sbin:$PATH"
-source ~/.bash_aliases
-source ~/.bash_aliases
