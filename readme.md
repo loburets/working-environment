@@ -5,3 +5,4 @@
 - [PhpStorm](phpstorm/)
 - [Terminal on mac](terminal-mac/)
 - [Vagrant](vagrant/)
+- [Vagrant](mac/)
