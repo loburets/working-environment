@@ -50,6 +50,7 @@ sublime:
 	shift + space 		- auto complete
 	ctrl, shift + button1 - go to definition in all project
 	ctrl + space 		- AutoFileName
+	cmd + alt + O 		- сменить тип курсора (как Insert)
 
 mac:
 
