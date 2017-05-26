@@ -49,3 +49,6 @@ alias gl='gulp'
 
 # for reload this settings run
 # source ~/.bash_profile
+export PATH="/usr/local/sbin:$PATH"
+source ~/.bash_aliases
+source ~/.bash_aliases
