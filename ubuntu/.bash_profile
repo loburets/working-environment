@@ -1,5 +1,8 @@
 # ~/.bash_profile
 
+# Add to ~/.bashrc:
+# source ~/.bash_profile
+
 # git current branch function
 
 parse_git_branch() {
