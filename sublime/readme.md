@@ -17,7 +17,7 @@
 
 4.a) SublimeLinter-php          - Синтаксис PHP
 
-4.b) SublimeLinter-gsl          - Синтаксис JS
+4.b) SublimeLinter-gjslint          - Синтаксис JS
 
 5) Laravel 5 Snippets           - Сниппеты для ларавеля
 
