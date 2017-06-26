@@ -28,7 +28,7 @@ WHITEBOLD="\[\033[1;37m\]"
 # replace the \w to \W if you need a short path
 # you can add \n if you need the line break
 
-export PS1="${GREENBOLD}\u@\h: ${POWDER_BLUE}\w ${LIME_YELLOW}\$(parse_git_branch) ${WHITE}\n$ "
+export PS1="${GREENBOLD}\u@\h: ${BLUEBOLD}\w ${YELLOWBOLD}\$(parse_git_branch) ${WHITE}\n$ "
 
 # Aliases
 alias gs='git status'
