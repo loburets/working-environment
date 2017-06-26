@@ -55,4 +55,3 @@ alias gl='gulp'
 # source ~/.bash_profile
 export PATH="/usr/local/sbin:$PATH"
 source ~/.bash_aliases
-source ~/.bash_aliases

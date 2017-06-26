@@ -1,8 +1,7 @@
-
-- [Requirements for new enviroment](overall-requirements.md)
+- [Mac](mac/)
+- [Windows](windows/)
+- [Ubuntu](ubuntu/)
 - [List of short cuts](short_cuts.md)
 - [Sublime Text](sublime/)
 - [PhpStorm](phpstorm/)
-- [Terminal on mac](terminal-mac/)
 - [Vagrant](vagrant/)
-- [Mac](mac/)

@@ -1,0 +1,53 @@
+# ~/.bash_profile
+
+# git current branch function
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+#colors
+BLACK="\[\033[0;30m\]"
+BLACKBOLD="\[\033[1;30m\]"
+RED="\[\033[0;31m\]"
+REDBOLD="\[\033[1;31m\]"
+GREEN="\[\033[0;32m\]"
+GREENBOLD="\[\033[1;32m\]"
+YELLOW="\[\033[0;33m\]"
+YELLOWBOLD="\[\033[1;33m\]"
+BLUE="\[\033[0;34m\]"
+BLUEBOLD="\[\033[1;34m\]"
+PURPLE="\[\033[0;35m\]"
+PURPLEBOLD="\[\033[1;35m\]"
+CYAN="\[\033[0;36m\]"
+CYANBOLD="\[\033[1;36m\]"
+WHITE="\[\033[0;37m\]"
+WHITEBOLD="\[\033[1;37m\]"
+
+# format of the line
+# replace the \w to \W if you need a short path
+# you can add \n if you need the line break
+
+export PS1="${GREENBOLD}\u@\h: ${POWDER_BLUE}\w ${LIME_YELLOW}\$(parse_git_branch) ${WHITE}\n$ "
+
+# Aliases
+alias gs='git status'
+alias gg='git gui'
+alias gm='git merge'
+alias gmm='git merge master'
+alias gmd='git merge dev'
+alias gch='git checkout'
+alias gchb='git checkout -b'
+alias gchm='git checkout master'
+alias gchd='git checkout dev'
+alias gpl='git pull'
+alias gpsh='git push'
+alias grh='git reset --hard'
+alias grs='git reset --soft'
+alias gcl='git clone'
+
+alias gw='gulp watch'
+alias gl='gulp'
+
+# for reload this settings run
+# source ~/.bash_profile
