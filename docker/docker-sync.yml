@@ -1,0 +1,18 @@
+# Install:
+#   $ sudo gem install docker-sync
+# Use this:
+#   $ docker-sync start
+#   $ docker-compose -f docker-compose.yml -f docker-compose-dev.yml up -d
+#
+# To start sync services and docker-compose at the same time:
+#   $ docker-sync-stack start
+# Clean:
+#   $ docker-sync-stack clean
+#
+
+version: "2"
+
+syncs:
+  #IMPORTANT: ensure this name is unique and does not match your other application container name
+  simplest-sync: #tip: add -sync and you keep consistent names as a convention
+    src: '../'
