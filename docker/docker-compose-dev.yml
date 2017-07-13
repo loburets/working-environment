@@ -1,17 +1,17 @@
-# this is our development docker-compose building on top of the prodicker docker-compose, just mounting
-# the sync image - not redefining anything else
+# this is our development docker-compose
+# the sync image - not redefining anything else except volumes
 
 version: "2"
 services:
   app:
     volumes:
-      - simplest-sync:/var/www:nocopy
+      - main-sync:/var/www:nocopy
       # will be mounted on /var/www
       # nocopy is important
       # ignore the contents which have been on the initial volume / image and do enforce the content from our host on the initial wiring
   web:
     volumes:
-      - simplest-sync:/var/www:nocopy
+      - main-sync:/var/www:nocopy
 
 # that the important thing
 volumes:

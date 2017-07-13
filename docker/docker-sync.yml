@@ -11,8 +11,20 @@
 #
 
 version: "2"
-
+options:
+  verbose: true
 syncs:
-  #IMPORTANT: ensure this name is unique and does not match your other application container name
-  simplest-sync: #tip: add -sync and you keep consistent names as a convention
+  # Ensure this name is unique and does not match your other application container name
+  # Tip: add -sync and you keep consistent names as a convention
+  main-sync:
     src: '../'
+    sync_userid: 33
+    sync_host_port: 10872
+    sync_strategy: 'rsync'
+    sync_args: '-L'
+# -l, --links
+# When symlinks are encountered, recreate the symlink on the destination.
+# -L, --copy-links
+# When symlinks are encountered, the item that they point to (the referent) is copied
+# -k, --copy-dirlinks
+# This option causes the sending side to treat a symlink to a directory as though it were a real directory.
