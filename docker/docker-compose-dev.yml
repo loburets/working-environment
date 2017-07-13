@@ -15,5 +15,5 @@ services:
 
 # that the important thing
 volumes:
-  simplest-sync:
+  main-sync:
     external: true
