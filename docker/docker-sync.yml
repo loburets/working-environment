@@ -8,20 +8,29 @@
 #   $ docker-sync-stack start
 # Clean:
 #   $ docker-sync-stack clean
-#
 
 version: "2"
-options:
-  verbose: true
+# options:
+#   verbose: true
 syncs:
   # Ensure this name is unique and does not match your other application container name
   # Tip: add -sync and you keep consistent names as a convention
   main-sync:
     src: '../'
     sync_userid: 33
-    sync_host_port: 10872
-    sync_strategy: 'rsync'
-    sync_args: '-L'
+    # sync_strategy: 'native_osx' # not needed, this is the default now
+  database-sync:
+    src: './data/mysql'
+    sync_userid: 33
+
+# For rsync
+# The rsync has fast inital syncronization, but implements a one way sync only (from local to containter)
+# and deleting files on the host does yet not delete them on the container
+#
+#   sync_host_port: 10872
+#   sync_strategy: 'rsync'
+#   sync_args: '-L'
+#
 # -l, --links
 # When symlinks are encountered, recreate the symlink on the destination.
 # -L, --copy-links
