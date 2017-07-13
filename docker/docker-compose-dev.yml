@@ -12,13 +12,14 @@ services:
   web:
     volumes:
       - main-sync:/var/www:nocopy
-  database:
-      volumes:
-          - database-sync:/var/lib/mysql
+  # some problems with permissions
+  # database:
+  #     volumes:
+  #         - database-sync:/var/lib/mysql
 
 # that the important thing
 volumes:
   main-sync:
     external: true
-  database-sync:
-    external: true
+  # database-sync:
+  #   external: true

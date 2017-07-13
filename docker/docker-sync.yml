@@ -19,9 +19,9 @@ syncs:
     src: '../'
     sync_userid: 33
     # sync_strategy: 'native_osx' # not needed, this is the default now
-  database-sync:
-    src: './data/mysql'
-    sync_userid: 33
+
+  # database-sync:
+  #   src: './data/mysql'
 
 # For rsync
 # The rsync has fast inital syncronization, but implements a one way sync only (from local to containter)
