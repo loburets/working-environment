@@ -12,6 +12,7 @@ services:
   web:
     volumes:
       - main-sync:/var/www:nocopy
+
   # some problems with permissions
   # database:
   #     volumes:

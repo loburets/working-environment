@@ -16,20 +16,40 @@ syncs:
   # Ensure this name is unique and does not match your other application container name
   # Tip: add -sync and you keep consistent names as a convention
   main-sync:
+    # sync_strategy: 'native_osx'   # not needed, this is the default now
     src: '../'
     sync_userid: 33
-    # sync_strategy: 'native_osx' # not needed, this is the default now
+    sync_excludes:
+      - 'composer.json'
+      - 'composer.lock'
+      - 'bower.json'
+      - 'package.json'
+      - '.gitignore'
+      - '.git'
+      - '*.coffee'
+      - '*.scss'
+      - '*.sass'
+      - 'bower_components'
+      - 'resources/assets'
+      - 'node_modules'
+      - '.DS_Store'
+      - '.idea'
+      - 'data'
+      - 'docker'
+      # etc
+
+    # watch_excludes: ['.*/vendor']   # currently doen't work
 
   # database-sync:
   #   src: './data/mysql'
 
 # For rsync
-# The rsync has fast inital syncronization, but implements a one way sync only (from local to containter)
+# The rsync has drasticly faster inital syncronization, but implements a one way sync only (from local to containter)
 # and deleting files on the host does yet not delete them on the container
 #
-#   sync_host_port: 10872
-#   sync_strategy: 'rsync'
-#   sync_args: '-L'
+    # sync_host_port: 10872
+    # sync_strategy: 'rsync'
+    # sync_args: '-L'
 #
 # -l, --links
 # When symlinks are encountered, recreate the symlink on the destination.
