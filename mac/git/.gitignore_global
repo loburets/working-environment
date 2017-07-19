@@ -4,3 +4,5 @@
 .phpstorm.meta.php
 _ide_helper.php
 docker
+docker/docker-sync.yml
+docker/docker-compose-dev.yml
