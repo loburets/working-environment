@@ -22,4 +22,5 @@
         done
 
 	    echo "So let's restart apache..."
-	    sudo apachectl restart
+	    #sudo apachectl restart
+        sudo /usr/sbin/httpd -k restart

@@ -15,22 +15,24 @@ parse_git_branch() {
 }
 
 #colors
-WHITE="\[\033[00m\]"
+
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
-LIME_YELLOW=$(tput setaf 190)
-POWDER_BLUE=$(tput setaf 153)
 BLUE=$(tput setaf 4)
 MAGENTA=$(tput setaf 5)
 CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+
+LIME_YELLOW=$(tput setaf 190)
+POWDER_BLUE=$(tput setaf 153)
 
 # format of the line
 # replace the \w to \W if you need a short path
 # you can add \n if you need the line break
 
-export PS1="${POWDER_BLUE}\u@\h: ${WHITE}\w ${LIME_YELLOW}\$(parse_git_branch) ${WHITE}\n$ "
+export PS1="${GREEN}\u@\h: ${WHITE}\w ${BLUE}\$(parse_git_branch) ${WHITE}\n$ "
 
 # Aliases
 alias gs='git status'
@@ -55,3 +57,5 @@ alias gl='gulp'
 # source ~/.bash_profile
 export PATH="/usr/local/sbin:$PATH"
 source ~/.bash_aliases
+
+export PATH="$HOME/.npm-packages/bin:$PATH"
