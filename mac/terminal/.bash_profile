@@ -44,6 +44,7 @@ alias gch='git checkout'
 alias gchb='git checkout -b'
 alias gchm='git checkout master'
 alias gchd='git checkout dev'
+alias gchs='git checkout staging'
 alias gpl='git pull'
 alias gpsh='git push'
 alias grh='git reset --hard'
@@ -53,9 +54,12 @@ alias gcl='git clone'
 alias gw='gulp watch'
 alias gl='gulp'
 
+alias wp='webpack'
+alias ww='webpack --watch'
+
 # for reload this settings run
 # source ~/.bash_profile
 export PATH="/usr/local/sbin:$PATH"
-source ~/.bash_aliases
+
 
 export PATH="$HOME/.npm-packages/bin:$PATH"
