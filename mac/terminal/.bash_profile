@@ -57,6 +57,16 @@ alias gl='gulp'
 alias wp='webpack'
 alias ww='webpack --watch'
 
+alias pa php artisan
+
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+
+alias cda='composer dumpautoload'
+
 # for reload this settings run
 # source ~/.bash_profile
 export PATH="/usr/local/sbin:$PATH"
