@@ -57,7 +57,9 @@ alias gl='gulp'
 alias wp='webpack'
 alias ww='webpack --watch'
 
-alias pa php artisan
+alias pa='php artisan'
+alias pu='phpunit'
+alias pf='phpunit --filter'
 
 alias ..='cd ../'
 alias ...='cd ../../'

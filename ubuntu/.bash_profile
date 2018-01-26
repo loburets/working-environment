@@ -52,5 +52,8 @@ alias gcl='git clone'
 alias gw='gulp watch'
 alias gl='gulp'
 
+alias pu='phpunit'
+alias pf='phpunit --filter'
+
 # for reload this settings run
 # source ~/.bash_profile
