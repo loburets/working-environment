@@ -40,11 +40,12 @@ alias gg='git gui'
 alias gm='git merge'
 alias gmm='git merge master'
 alias gmd='git merge dev'
+alias gms='git merge staging'
 alias gch='git checkout'
-alias gchb='git checkout -b'
 alias gchm='git checkout master'
 alias gchd='git checkout dev'
 alias gchs='git checkout staging'
+alias gchb='git checkout -b'
 alias gpl='git pull'
 alias gpsh='git push'
 alias grh='git reset --hard'
@@ -60,6 +61,7 @@ alias ww='webpack --watch'
 alias pa='php artisan'
 alias pu='phpunit'
 alias pf='phpunit --filter'
+alias pts='phpunit --testsuite='
 
 alias ..='cd ../'
 alias ...='cd ../../'
@@ -71,7 +73,3 @@ alias cda='composer dumpautoload'
 
 # for reload this settings run
 # source ~/.bash_profile
-export PATH="/usr/local/sbin:$PATH"
-
-
-export PATH="$HOME/.npm-packages/bin:$PATH"
