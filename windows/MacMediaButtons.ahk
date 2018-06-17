@@ -55,3 +55,25 @@ F13 & F9::Send {F9}
 F13 & F10::Send {F10}
 F13 & F11::Send {F11}
 F13 & F12::Send {F12}
+
+
+;;;Keyboard layouts;;;
+
+; This should be replaced by whatever your native language is. See 
+; http://msdn.microsoft.com/en-us/library/dd318693%28v=vs.85%29.aspx
+; for the language identifiers list.
+ru := DllCall("LoadKeyboardLayout", "Str", "00000419", "Int", 1)
+en := DllCall("LoadKeyboardLayout", "Str", "00000409", "Int", 1)
+
+Alt & Space::
+w := DllCall("GetForegroundWindow")
+pid := DllCall("GetWindowThreadProcessId", "UInt", w, "Ptr", 0)
+l := DllCall("GetKeyboardLayout", "UInt", pid)
+if (l = en)
+{
+    PostMessage 0x50, 0, %ru%,, A
+}
+else
+{
+PostMessage 0x50, 0, %en%,, A
+}
