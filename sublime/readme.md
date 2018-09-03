@@ -29,6 +29,8 @@
 
 ### Косметические плагины ###
 
+0) Material Monokai Soda
+
 1) Boxy Ocean 					- Тема
 
 2) MaterialTheme                - Визуальные темы саблайма
