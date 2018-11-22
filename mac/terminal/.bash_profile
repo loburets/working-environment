@@ -71,5 +71,12 @@ alias ......='cd ../../../../../'
 
 alias cda='composer dumpautoload'
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+pythonDir="$HOME/Library/Python/3.7/bin"
+[ -d $pythonDir ] && export PATH=$pythonDir:$PATH:
+
 # for reload this settings run
 # source ~/.bash_profile
