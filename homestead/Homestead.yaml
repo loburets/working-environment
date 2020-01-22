@@ -1,0 +1,42 @@
+---
+ip: "192.168.10.10"
+memory: 3072
+cpus: 2
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ~/projects/woof.loc
+      to: /home/vagrant/woof.loc
+      type: "nfs"
+
+    - map: ~/projects/cron-madpaws.loc
+      to: /home/vagrant/cron-madpaws.loc
+      type: "nfs"
+
+sites:
+    - map: woof.loc
+      to: /home/vagrant/woof.loc/public
+      php: "7.1"
+
+databases:
+    - woof_db
+    - woof_db_test
+    - fetchho
+
+features:
+    - mariadb: false
+    - ohmyzsh: false
+    - webdriver: false
+    - python: true
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp

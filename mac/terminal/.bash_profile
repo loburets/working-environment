@@ -1,5 +1,11 @@
 # ~/.bash_profile
 
+# hms up or hms ssh from anywhere on your system
+
+function hms() {
+    ( cd ~/Homestead && vagrant $* )
+}
+
 # git auto complete
 # download this:
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
@@ -71,12 +77,10 @@ alias ......='cd ../../../../../'
 
 alias cda='composer dumpautoload'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export PATH=~/Library/Python/2.7/bin:$PATH
+export PATH=~/Library/Python/3.7/bin:$PATH
 
-pythonDir="$HOME/Library/Python/3.7/bin"
-[ -d $pythonDir ] && export PATH=$pythonDir:$PATH:
+export NVM_DIR="$HOME/.nvm"
 
 # for reload this settings run
 # source ~/.bash_profile
