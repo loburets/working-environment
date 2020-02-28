@@ -30,7 +30,8 @@ sites:
 databases:
     - woof_db
     - woof_db_test
-    - fetchho
+    - fetch_woof_db
+    - test_1
 
 features:
     - mariadb: false
