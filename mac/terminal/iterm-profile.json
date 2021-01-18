@@ -20,7 +20,13 @@
     "Green Component" : 0.96352285146713257
   },
   "Guid" : "5999BCC2-1B17-4EA0-A6BB-0B6516E57131",
-  "Custom Directory" : "Yes",
+  "Ansi 2 Color" : {
+    "Red Component" : 0.31426474452018738,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.48438894748687744,
+    "Alpha Component" : 1,
+    "Green Component" : 0.98277664184570312
+  },
   "Ansi 3 Color" : {
     "Red Component" : 0.9424901008605957,
     "Color Space" : "Calibrated",
@@ -67,7 +73,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.92725068330764771
   },
-  "Working Directory" : "\/Users\/loburets\/projects",
+  "Working Directory" : "\/Users\/dmitrijloburec\/Projects",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
@@ -286,7 +292,8 @@
     }
   },
   "Window Type" : 0,
-  "Cursor Boost" : 0.035601265822784812,
+  "Cursor Boost" : 0.036042837078651684,
+  "Initial Text" : "ps aux | grep -v grep | grep Sourcetree || open \/Applications\/SourceTree.app\/Contents\/MacOS\/SourceTree",
   "Background Image Location" : "",
   "Blur" : false,
   "Badge Color" : {
@@ -318,7 +325,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.12215268611907959
   },
-  "Minimum Contrast" : 0.15308544303797469,
+  "Minimum Contrast" : 0.076393821022727279,
   "Shortcut" : "",
   "Cursor Color" : {
     "Red Component" : 0.89585232734680176,
@@ -385,13 +392,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.26170071959495544
   },
-  "Ansi 2 Color" : {
-    "Red Component" : 0.31426474452018738,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.48438894748687744,
-    "Alpha Component" : 1,
-    "Green Component" : 0.98277664184570312
-  },
+  "Custom Directory" : "Yes",
   "Ansi 5 Color" : {
     "Red Component" : 0.98751437664031982,
     "Color Space" : "Calibrated",
