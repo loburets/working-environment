@@ -1,21 +1,7 @@
 # ~/.bash_profile
 
 # for reload this settings run
-# source ~/.bash_profile
-
-# git auto complete
-# download this:
-# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
-
-# git current branch function
-
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+# source ~/.zshrc
 
 #colors
 
@@ -31,11 +17,17 @@ WHITE=$(tput setaf 7)
 LIME_YELLOW=$(tput setaf 190)
 POWDER_BLUE=$(tput setaf 153)
 
-# format of the line
-# replace the \w to \W if you need a short path
-# you can add \n if you need the line break
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
 
-export PS1="${GREEN}\u@\h: ${WHITE}\w ${BLUE}\$(parse_git_branch) ${WHITE}\n$ "
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '(%b)'
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+autoload -U colors && colors
+PROMPT='${GREEN}%n: ${WHITE}${PWD/#$HOME/~} ${BLUE}${vcs_info_msg_0_} %{$reset_color%}%'
 
 # Aliases
 alias gs='git status'
