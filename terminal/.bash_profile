@@ -2,9 +2,9 @@
 
 # hms up or hms ssh from anywhere on your system
 
-function hms() {
-    ( cd ~/Homestead && vagrant $* )
-}
+# function hms() {
+#    ( cd ~/Homestead && vagrant $* )
+# }
 
 # git auto complete
 # download this:
@@ -65,9 +65,9 @@ alias wp='webpack'
 alias ww='webpack --watch'
 
 alias pa='php artisan'
-alias pu='phpunit'
-alias pf='phpunit --filter'
-alias pts='phpunit --testsuite='
+alias pu='vendor/bin/phpunit'
+alias pf='vendor/bin/phpunit --filter'
+alias pts='vendor/bin/phpunit --testsuite='
 
 alias ..='cd ../'
 alias ...='cd ../../'

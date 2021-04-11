@@ -5,3 +5,4 @@
 - [Sublime Text](sublime/)
 - [PhpStorm](phpstorm/)
 - [Vagrant](vagrant/)
+- [Terminal](terminal/)
