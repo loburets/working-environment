@@ -71,3 +71,10 @@ alias cda='composer dumpautoload'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# If you need to update python version on mac using pyenv from the default v2, but you can't remove the v2 as it is required by system
+# Then use this command
+# See the https://opensource.com/article/19/5/python-3-default-mac for details
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
