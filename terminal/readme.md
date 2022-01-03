@@ -1,7 +1,25 @@
-Установить oh my zsh
-
 Добавить "Send text as start" для того чтобы SourceTree нормально работало с хуками:
 
-```
+```shell
 ps aux | grep -v grep | grep Sourcetree || open /Applications/SourceTree.app/Contents/MacOS/SourceTree
 ```
+
+Ипортировать профайл из json файла и сделать дефолтным iterm-profile.json
+
+Установить oh my zsh
+
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Установить Powerlevel10k
+```shell
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+```
+
+Заменить файлы в корневой папке юзера:
+.p10k.zsh
+.zshrc
+
+В этих файлах заменить dmitryloburets на имя (папку) юзера
