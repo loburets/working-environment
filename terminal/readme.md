@@ -32,8 +32,16 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
+Всегда показывать скрытые файлы в Finder:
+
+```shell
+defaults write com.apple.finder AppleShowAllFiles -boolean true; killall Finder;
+```
+
 Заменить файлы в корневой папке юзера:
 .p10k.zsh
 .zshrc
 
-В этих файлах заменить dmitryloburets на имя (папку) юзера
+В этих файлах заменить (например dmitryloburets) на текущее имя (папку) юзера. Аналогично в настройках в профайле iTerm: Working directory
+
+Также запустить `p10k configure`, тогда он скачает шрифты, установит иконки и т.д.
