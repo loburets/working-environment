@@ -132,7 +132,7 @@ source $ZSH/oh-my-zsh.sh
 alias gs='git status'
 alias gb='git branch'
 alias gm='git merge'
-alias gmm='git merge master'
+alias gmm='git merge $(git_main_branch)'
 alias gmd='git merge dev'
 alias gms='git merge staging'
 alias gch='git checkout'
@@ -146,7 +146,11 @@ alias gpsh='git push'
 alias pu='vendor/bin/phpunit'
 alias pf='vendor/bin/phpunit --filter'
 
-alias mt='make test'
+alias nt='npm test'
+alias yt='yarn test'
+alias td='npm run test:debug'
+
+alias st='open /Applications/SourceTree.app/Contents/MacOS/SourceTree'
 
 alias ..='cd ../'
 alias ...='cd ../../'
@@ -159,3 +163,8 @@ alias ......='cd ../../../../../'
 
 # To select custom ssh profile
 ssh-add ~/.ssh/id_rsa_personal &>/dev/null
+
+# Select custom python version by pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
