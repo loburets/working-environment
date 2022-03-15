@@ -149,6 +149,8 @@ alias pf='vendor/bin/phpunit --filter'
 alias nt='npm test'
 alias yt='yarn test'
 alias td='npm run test:debug'
+alias dc='docker-compose up -d'
+alias du='docker-compose up -d'
 
 alias st='open /Applications/SourceTree.app/Contents/MacOS/SourceTree'
 
