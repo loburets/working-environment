@@ -146,7 +146,7 @@ alias gpsh='git push'
 alias pu='vendor/bin/phpunit'
 alias pf='vendor/bin/phpunit --filter'
 
-alias nt='npm test'
+alias nt='npm run test'
 alias yt='yarn test'
 alias td='npm run test:debug'
 alias dc='docker-compose up -d'
