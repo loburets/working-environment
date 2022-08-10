@@ -132,7 +132,8 @@ source $ZSH/oh-my-zsh.sh
 alias gs='git status'
 alias gb='git branch'
 alias gm='git merge'
-alias gmm='git merge $(git_main_branch)'
+# alias gmm='git merge $(git_main_branch)'
+alias gmm='git pull origin $(git_main_branch)'
 alias gmd='git merge dev'
 alias gms='git merge staging'
 alias gch='git checkout'
@@ -151,8 +152,17 @@ alias yt='yarn test'
 alias td='npm run test:debug'
 alias dc='docker-compose up -d'
 alias du='docker-compose up -d'
+alias dd='docker-compose down'
+alias dcd='docker-compose down'
 
-alias st='open /Applications/SourceTree.app/Contents/MacOS/SourceTree'
+alias fo='open -a Fork .'
+
+# To open SourceTree and work with hooks:
+# alias st='open /Applications/SourceTree.app/Contents/MacOS/SourceTree'
+# hooks doesn't work:
+# alias st='open -a SourceTree ./'
+
+alias ws='open -a WebStorm ./'
 
 alias ..='cd ../'
 alias ...='cd ../../'
