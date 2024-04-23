@@ -148,12 +148,10 @@ alias pu='vendor/bin/phpunit'
 alias pf='vendor/bin/phpunit --filter'
 
 alias nt='npm run test'
-alias yt='yarn test'
-alias td='npm run test:debug'
-alias dc='docker-compose up -d'
+alias ntw='npm run test:watch'
+alias ntd='npm run test:debug'
 alias du='docker-compose up -d'
-alias dd='docker-compose down'
-alias dcd='docker-compose down'
+alias ds='docker stop $(docker ps -a -q)'
 
 alias fo='open -a Fork .'
 
@@ -163,6 +161,7 @@ alias fo='open -a Fork .'
 # alias st='open -a SourceTree ./'
 
 alias ws='open -a WebStorm ./'
+alias vs='open -a Visual\ Studio\ Code ./'
 
 alias ..='cd ../'
 alias ...='cd ../../'

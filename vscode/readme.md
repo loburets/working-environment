@@ -1,0 +1,1 @@
+just use github profile to sync settings
