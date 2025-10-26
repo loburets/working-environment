@@ -3,11 +3,9 @@ Just personal settings/configs/checklists
 - [Mac](mac/)
 - [Windows](windows/)
 - [Ubuntu](ubuntu/)
-- [List of short cuts](short_cuts.md)
-- [Sublime Text](sublime/)
-- [PhpStorm](phpstorm/)
-- [Vagrant](vagrant/)
+- [List of shortcuts](short_cuts.md)
 - [Terminal](terminal/)
+- [New Machine List](new_machine_list.md)
 
 List of things to be installed for work:
 
