@@ -1,3 +1,5 @@
+Just personal settings/configs/checklists
+
 - [Mac](mac/)
 - [Windows](windows/)
 - [Ubuntu](ubuntu/)

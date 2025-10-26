@@ -6,7 +6,7 @@
 ## Then in was updated by installed theme: https://github.com/romkatv/powerlevel10k
 ## So you also need to copy related config file to ~/.p10k.zsh or configure it again
 ##
-## Then plugins was installed: 
+## Then plugins was installed:
 ##    https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 ##    https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 ##
@@ -162,6 +162,8 @@ alias fo='open -a Fork .'
 
 alias ws='open -a WebStorm ./'
 alias vs='open -a Visual\ Studio\ Code ./'
+alias cr='open -a Cursor ./'
+alias cu='open -a Cursor ./'
 
 alias ..='cd ../'
 alias ...='cd ../../'
